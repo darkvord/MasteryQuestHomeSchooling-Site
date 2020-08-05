@@ -3,7 +3,71 @@
     ViewData["Title"] = "Correculum";
 }
 
-<h1>Correculum</h1>
+<!-- Content -->
+<div class="page-content">
+    <!-- inner page banner -->
+    <div class="rdx-bnr-inr overlay-black-middle" style="background-image:url(../images/background/bg4.jpg);">
+        <div class="container">
+            <div class="rdx-bnr-inr-entry">
+                <h1 class="text-white">Curriculum</h1>
+            </div>
+        </div>
+    </div>
+    <!-- inner page banner END -->
+    <!-- Breadcrumb row -->
+    <div class="breadcrumb-row">
+        <div class="container">
+            <ul class="list-inline">
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                <li>Correculum</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Breadcrumb row END -->
+    <!-- contact area -->
+    <div class="content">
+        <!-- Services  -->
+        <div class="section-full content-inner">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-6 col-lg-4 col-sm-6 m-b30">
+                        <div class="rdx-box">
+                            <div class="rdx-media"> <a href="#"><img src="../images/our-work/pic1.jpg" alt=""></a> </div>
+                            <div class="rdx-info p-a30 border-1">
+                                <h4 class="rdx-title m-t0"><a href="#">Online Classrooms</a></h4>
+                                <p>Join our online full functioning classroom with engaging visual lessons, progress monitoring, assessment, & Teacher guidance.</p>
+                                <a href="#" class="site-button ">More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-sm-6 m-b30">
+                        <div class="rdx-box">
+                            <div class="rdx-media"> <a href="#"><img src="~/images/our-work/pic2.jpg" alt=""></a> </div>
+                            <div class="rdx-info p-a30 border-1">
+                                <h4 class="rdx-title m-t0"><a href="#">MASTERY QUEST</a></h4>
+                                <p>Take in the persona of a decision-maker and real-world problem solver in the Mastery Quest Universe.</p>
+                                <a href="#" class="site-button ">More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-sm-6 m-b30">
+                        <div class="rdx-box">
+                            <div class="rdx-media"> <a href="#"><img src="~/images/our-work/pic3.jpg" alt=""></a> </div>
+                            <div class="rdx-info p-a30 border-1">
+                                <h4 class="rdx-title m-t0"><a href="#">SABER GAMES</a></h4>
+                                <p>Capture the flag meets dodgeball at the Jedi temple, the Saber Games are the most fun game on Earth.</p>
+                                <a href="#" class="site-button ">More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services END -->
+    </div>
+    <!-- contact area END -->
+</div>
+<!-- Content END-->
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial"); }

@@ -8,18 +8,11 @@ namespace MasteryQuestHSSite.Controllers
 {
     public class EnrollmentController : Controller
     {
-        public IActionResult CharterSchools()
+        public IActionResult Tuition()
         {
             return View();
         }
-        public IActionResult Courses()
-        {
-            return View();
-        }
-        public IActionResult PersonalPayments()
-        {
-            return View();
-        }
+
 
     }
 }

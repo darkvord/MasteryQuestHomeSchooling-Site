@@ -2,14 +2,13 @@
 @{
     ViewData["Title"] = "Location SouthBay";
 }
-
 <!-- Content -->
 <div class="page-content">
     <!-- inner page banner -->
     <div class="rdx-bnr-inr overlay-black-middle" style="background-image:url(../images/background/bg4.jpg);">
         <div class="container">
             <div class="rdx-bnr-inr-entry">
-                <h1 class="text-white">Contact Us 4</h1>
+                <h1 class="text-white">Contact Us</h1>
             </div>
         </div>
     </div>
@@ -18,8 +17,8 @@
     <div class="breadcrumb-row">
         <div class="container">
             <ul class="list-inline">
-                <li><a href="#">Home</a></li>
-                <li>Contact us 4</li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                <li>South Bay</li>
             </ul>
         </div>
     </div>
@@ -27,41 +26,10 @@
     <!-- contact area -->
     <div class="content-area">
         <div class="container">
-            <!-- info part start -->
-            <h4>Contact Info</h4>
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6 m-b30">
-                    <div class="icon-bx-wraper center bg-white p-a30">
-                        <div class="icon-bx-sm bg-primary m-b20"> <a href="#" class="icon-cell"><i class="fa fa-phone"></i></a> </div>
-                        <div class="icon-content">
-                            <h5>Phone</h5>
-                            <p>+91 564 548 4854</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 m-b30">
-                    <div class="icon-bx-wraper center bg-white p-a30">
-                        <div class="icon-bx-sm bg-primary m-b20"> <a href="#" class="icon-cell"><i class="fa fa-envelope"></i></a> </div>
-                        <div class="icon-content">
-                            <h6>Email</h6>
-                            <p>info@example.com</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12  m-b30">
-                    <div class="icon-bx-wraper center bg-white p-a30">
-                        <div class="icon-bx-sm bg-primary m-b20"> <a href="#" class="icon-cell"><i class="fa fa-map-marker"></i></a> </div>
-                        <div class="icon-content">
-                            <h5>Address</h5>
-                            <p>252 W 43rd St New York, NY</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- info part END -->
-            <div class="row">
-                <!-- Contact form start -->
-                <div class="col-md-6">
+                <!-- Left part start -->
+                <div class="col-xl-9 col-lg-8">
+                    <h3>Southbay</h3>
                     <h4>Contact form</h4>
                     <div class="dzFormMsg"></div>
                     <div class="p-a30 bg-white clearfix m-b30">
@@ -114,14 +82,50 @@
                         </form>
                     </div>
                 </div>
-                <!-- Contact form END -->
-                <!-- Map part start -->
-                <div class="col-md-6">
-                    <h4>Our Location</h4>
-                    <iframe class="d-flex align-self-stretch m-b30" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.3825624477!2d75.65046970649679!3d26.88544791796718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C+Rajasthan!5e0!3m2!1sen!2sin!4v1500819483219" style="border:0; width:100%; min-height:410px;" allowfullscreen></iframe>
+                <!-- Left part END -->
+                <!-- right part start -->
+                <div class="col-xl-3 col-lg-4">
+                    <h4>Contact Info</h4>
+                    <div class="p-a30 bg-white m-b30">
+                        <ul class="no-margin">
+                            <li class="icon-bx-wraper left m-b30">
+                                <div class="icon-bx-xs bg-primary"> <a href="#" class="icon-cell"><i class="fa fa-map-marker"></i></a> </div>
+                                <div class="icon-content">
+                                    <h6 class="text-uppercase m-b0 rdx-tilte">Address</h6>
+                                    <p>
+                                        1102 Camino Real <br>
+                                        Redondo Beach, CA
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="icon-bx-wraper left  m-b30">
+                                <div class="icon-bx-xs bg-primary"> <a href="#" class="icon-cell"><i class="fa fa-envelope"></i></a> </div>
+                                <div class="icon-content">
+                                    <h6 class="text-uppercase m-b0 rdx-tilte">EMAIL</h6>
+                                    <p>Questbroadcastingnetwor@gmail.com</p>
+                                </div>
+                            </li>
+                            <li class="icon-bx-wraper left">
+                                <div class="icon-bx-xs bg-primary"> <a href="#" class="icon-cell"><i class="fa fa-phone"></i></a> </div>
+                                <div class="icon-content">
+                                    <h6 class="text-uppercase m-b0 rdx-tilte">PHONE</h6>
+                                    <p>323-898-5649</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <!-- Map part start -->
+                <!-- right part END -->
             </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Map part start -->
+                    <h4>Our Location</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.355853094722!2d-118.3763464837906!3d33.8289324806673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd4b4b6a5d5a95%3A0x73ab9d6c123872f6!2s1102%20Camino%20Real%2C%20Redondo%20Beach%2C%20CA%2090277!5e0!3m2!1sen!2sus!4v1596414465707!5m2!1sen!2sus" style="border:0; width:100%; height:400px;" allowfullscreen></iframe>                    
+                    <!-- Map part END -->
+                </div>
+            </div>
+
         </div>
     </div>
     <!-- contact area  END -->
