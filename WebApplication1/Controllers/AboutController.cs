@@ -9,7 +9,7 @@ namespace MasteryQuestHSSite.Controllers
     public class AboutController : Controller
     {
         public IActionResult TheQuest()
-        {
+        {            
             return View();
         }
         public IActionResult Approach()

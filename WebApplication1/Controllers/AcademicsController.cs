@@ -8,7 +8,7 @@ namespace MasteryQuestHSSite.Controllers
 {
     public class AcademicsController : Controller
     {
-        public IActionResult Correculum()
+        public IActionResult Curriculum()
         {
             return View();
         }
